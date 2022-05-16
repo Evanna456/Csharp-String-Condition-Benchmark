@@ -11,7 +11,6 @@ namespace Csharp_String_Condition_Benchmark
         {
             data = "Pneumonoultramicroscopicsilicovolcanoconiosis";
         }
-
         [Benchmark]
         public string BIf1Condition()
         {
@@ -24,7 +23,6 @@ namespace Csharp_String_Condition_Benchmark
                 return data;
             }
         }
-
         [Benchmark]
         public string Bswitch1Condition()
         {
@@ -36,7 +34,6 @@ namespace Csharp_String_Condition_Benchmark
                     return data;
             }
         }
-
         [Benchmark]
         public string BIf2Condition()
         {
