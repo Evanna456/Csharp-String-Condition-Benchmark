@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>Csharp_String_Condition_Benchmark.IfvsSwitch-20220516-195818</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.22000
+Intel Core i7-8750H CPU 2.20GHz (Coffee Lake), 1 CPU, 12 logical and 6 physical cores
+.NET SDK=6.0.300
+  [Host]     : .NET 6.0.5 (6.0.522.21309), X64 RyuJIT
+  DefaultJob : .NET 6.0.5 (6.0.522.21309), X64 RyuJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>     Method</th><th>Mean</th><th>Error</th><th>StdDev</th>
+</tr>
+</thead><tbody><tr><td>BIf1Condition</td><td>0.2186 ns</td><td>0.0054 ns</td><td>0.0042 ns</td>
+</tr><tr><td>Bswitch1Condition</td><td>0.2210 ns</td><td>0.0110 ns</td><td>0.0103 ns</td>
+</tr><tr><td>BIf2Condition</td><td>0.4853 ns</td><td>0.0161 ns</td><td>0.0143 ns</td>
+</tr><tr><td>Bswitch2Condition</td><td>0.8587 ns</td><td>0.0179 ns</td><td>0.0168 ns</td>
+</tr><tr><td>BIf3Condition</td><td>1.6122 ns</td><td>0.0126 ns</td><td>0.0105 ns</td>
+</tr><tr><td>Bswitch3Condition</td><td>1.3824 ns</td><td>0.0207 ns</td><td>0.0194 ns</td>
+</tr><tr><td>BIf4Condition</td><td>1.7385 ns</td><td>0.0153 ns</td><td>0.0143 ns</td>
+</tr><tr><td>Bswitch4Condition</td><td>2.2057 ns</td><td>0.0079 ns</td><td>0.0070 ns</td>
+</tr><tr><td>BIf5Condition</td><td>2.4899 ns</td><td>0.0141 ns</td><td>0.0125 ns</td>
+</tr><tr><td>Bswitch5Condition</td><td>3.1487 ns</td><td>0.0089 ns</td><td>0.0083 ns</td>
+</tr><tr><td>BIf6Condition</td><td>3.1359 ns</td><td>0.0119 ns</td><td>0.0105 ns</td>
+</tr><tr><td>Bswitch6Condition</td><td>3.2520 ns</td><td>0.0128 ns</td><td>0.0120 ns</td>
+</tr></tbody></table>
+</body>
+</html>
